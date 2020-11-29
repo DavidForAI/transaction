@@ -1,0 +1,35 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bank?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: root
+  #    data:
+  #      classpath: insert.sql
+  #    initialization-mode: always
+
+#  mvc:
+#    static-path-pattern: /**
+#
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML
+#    encoding: UTF-8
+#    cache: false
+#    servlet:
+#      content-type: text/html
+#
+#mybatis:
+#  mapper-locations: classpath*:mapping/*Mapper.xml
+#  type-aliases-package: com.zcy.system.web
+
+
+
+logging:
+  level:
+    com:
+      zcy:
+        mapper: debug
